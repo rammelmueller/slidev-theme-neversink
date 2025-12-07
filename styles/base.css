@@ -31,7 +31,7 @@
 /* adjust default bullets */
 .slidev-layout li {
   margin-bottom: 1em;
-  line-height: 1.5em;
+  line-height: 1em;
 }
 
 .slidev-layout ul {
@@ -53,6 +53,28 @@
 .slidev-layout mark {
   @apply bg-amber-200;
   @apply text-amber-600;
+  font-weight: 300;
+  padding-left: 0.4em;
+  padding-right: 0.4em;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  border-radius: 0.4em;
+}
+
+.slidev-layout mark.red {
+  @apply bg-red-200;
+  @apply text-red-600;
+  font-weight: 300;
+  padding-left: 0.4em;
+  padding-right: 0.4em;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  border-radius: 0.4em;
+}
+
+.slidev-layout mark.green {
+  @apply bg-emerald-200;
+  @apply text-emerald-600;
   font-weight: 300;
   padding-left: 0.4em;
   padding-right: 0.4em;

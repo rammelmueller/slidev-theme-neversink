@@ -14,5 +14,8 @@ const colorscheme = computed(() => {
 <template>
   <div class="slidev-layout default slidecolor" :class="colorscheme">
     <slot />
+    <div class="note absolute bottom-3">
+      <slot name="note" />
+    </div>
   </div>
 </template>

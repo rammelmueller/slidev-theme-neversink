@@ -102,8 +102,12 @@ const flexclass = computed(() => {
     <div v-if="$slots.default" class="end">
       <slot name="default" />
     </div>
+    <div class="note absolute bottom-3">
+      <slot name="note" />
+    </div>
   </div>
 </template>
+
 
 <style>
 .slidev-layout.two-cols-header,
@@ -111,6 +115,12 @@ const flexclass = computed(() => {
   display: grid;
   grid-template-columns: repeat(12, 1fr); /* 12 columns */
   grid-template-rows: auto 1fr auto; /* top header and content */
+}
+
+.slidev-layout.two-cols-header .note {
+  font-weight: 300;
+  font-size: 0.2rem !important;
+  margin-right: 200px;
 }
 
 .slidev-layout.two-cols {
