@@ -8,8 +8,10 @@ Read about [Slidev](https://sli.dev/).
 
 ## Installation
 
-```bash
-npm install slidev-theme-neversink
+This is a fork; use it as a git dependency:
+
+```json
+"slidev-theme-neversink-rammelmueller": "github:rammelmueller/slidev-theme-neversink#v0.4.1"
 ```
 
 ## Usage
@@ -18,7 +20,7 @@ Add the theme to the frontmatter of your first slide in `slides.md`:
 
 ```md
 ---
-theme: neversink
+theme: neversink-rammelmueller
 ---
 ```
 
