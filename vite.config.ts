@@ -5,13 +5,17 @@ import Mark from 'markdown-it-mark'
 import { version } from './package.json'
 
 console.log(`Loading Neversink ${version} theme vite.config.ts...`)
+
+const useMarkdownItPlugins = (md) => {
+  md.use(sub)
+  md.use(Mark)
+}
+
 export default defineConfig({
   slidev: {
     markdown: {
-      markdownItSetup(md) {
-        md.use(sub)
-        md.use(Mark)
-      },
+      markdownItSetup: useMarkdownItPlugins,
+      markdownSetup: useMarkdownItPlugins,
     },
   },
 })
